@@ -1,0 +1,8 @@
+<p>live-search works!</p>
+<input [value]="searchQuery()" (input)="searchQuery.set($event.target.value)" placeholder="search names" />
+
+<ul>
+  <li *ngFor="let name of filteredName">
+    {{name}}
+  </li>
+</ul>

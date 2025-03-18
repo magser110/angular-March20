@@ -3,10 +3,11 @@ import { PostCardComponent } from './post-card/post-card.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { SignalBindingComponent } from './signal-binding/signal-binding.component';
+import { LiveSearchComponent } from './live-search/live-search.component';
 
 @Component({
   selector: 'app-root',
-  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent],
+  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent, LiveSearchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

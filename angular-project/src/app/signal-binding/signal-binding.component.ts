@@ -7,5 +7,9 @@ import { Component, signal } from '@angular/core';
   styleUrl: './signal-binding.component.css'
 })
 export class SignalBindingComponent {
-  nameSignal = signal('');
+  nameSignal = signal('testing');
+
+  resetName(){
+    this.nameSignal.set('');
+  }
 }
