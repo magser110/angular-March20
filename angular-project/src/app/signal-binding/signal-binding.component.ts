@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-signal-binding',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './signal-binding.component.css'
 })
 export class SignalBindingComponent {
-
+  nameSignal = signal('');
 }
