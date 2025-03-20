@@ -1,0 +1,11 @@
+<p>content-switcher works!</p>
+<div class="card">
+  <div class="card-header">
+    <h2>Dynamic Content</h2>
+  </div>
+  <div class="card-body">
+    <ng-content *ngIf="isOptionOne" select="[optionOne]"></ng-content>
+    <ng-content *ngIf="!isOptionOne" select="[optionTwo]"></ng-content>
+  </div>
+</div>
+<button (click)="toggleContent()">Toggle Content</button>

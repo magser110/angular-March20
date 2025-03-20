@@ -8,10 +8,12 @@ import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { DisplayDataComponent } from './display-data/display-data.component';
 import { EditDataComponent } from './edit-data/edit-data.component';
 import { ResetFormComponent } from './reset-form/reset-form.component';
+import { CardComponent } from './card/card.component';
+import { ContentSwitcherComponent } from './content-switcher/content-switcher.component';
 
 @Component({
   selector: 'app-root',
-  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent, LiveSearchComponent, SimpleFormComponent, DisplayDataComponent, EditDataComponent, ResetFormComponent],
+  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent, LiveSearchComponent, SimpleFormComponent, DisplayDataComponent, EditDataComponent, ResetFormComponent, CardComponent, ContentSwitcherComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
