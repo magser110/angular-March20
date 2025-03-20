@@ -1,0 +1,16 @@
+<p>display-data works!</p>
+<form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" ngModel required />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" ngModel required />
+
+  <button type="submit" [disabled]="!userForm.valid">Submit</button>
+</form>
+
+<div *ngIf="userData">
+  <h3>user info</h3>
+  <p>name: {{userData?.name}}</p>
+  <p>email: {{userData?.email}}</p>
+</div>
