@@ -1,0 +1,8 @@
+<p>weather works!</p>
+<h2>Weather Info</h2>
+<input type="text" [(ngModel)]="cityName" placeholder="Enter city name">
+<button (click)="getWeather()">Get Weather</button>
+
+<div *ngIf="weather">
+  <h3>{{ weather.city }}: {{ weather.temperature }}°C</h3>
+</div>

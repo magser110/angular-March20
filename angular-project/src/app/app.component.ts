@@ -13,10 +13,13 @@ import { ContentSwitcherComponent } from './content-switcher/content-switcher.co
 import { EventComponent } from './event/event.component';
 import { ProductComponent } from './product/product.component';
 import { MessageComponent } from './message/message.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { TaskComponent } from './task/task.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @Component({
   selector: 'app-root',
-  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent, LiveSearchComponent, SimpleFormComponent, DisplayDataComponent, EditDataComponent, ResetFormComponent, CardComponent, ContentSwitcherComponent, EventComponent,ProductComponent, MessageComponent],
+  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent, LiveSearchComponent, SimpleFormComponent, DisplayDataComponent, EditDataComponent, ResetFormComponent, CardComponent, ContentSwitcherComponent, EventComponent,ProductComponent, MessageComponent, ProductListComponent, TaskComponent, WeatherComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
