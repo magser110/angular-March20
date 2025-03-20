@@ -10,10 +10,13 @@ import { EditDataComponent } from './edit-data/edit-data.component';
 import { ResetFormComponent } from './reset-form/reset-form.component';
 import { CardComponent } from './card/card.component';
 import { ContentSwitcherComponent } from './content-switcher/content-switcher.component';
+import { EventComponent } from './event/event.component';
+import { ProductComponent } from './product/product.component';
+import { MessageComponent } from './message/message.component';
 
 @Component({
   selector: 'app-root',
-  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent, LiveSearchComponent, SimpleFormComponent, DisplayDataComponent, EditDataComponent, ResetFormComponent, CardComponent, ContentSwitcherComponent],
+  imports: [PostCardComponent, TaskListComponent, UserListComponent, SignalBindingComponent, LiveSearchComponent, SimpleFormComponent, DisplayDataComponent, EditDataComponent, ResetFormComponent, CardComponent, ContentSwitcherComponent, EventComponent,ProductComponent, MessageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
