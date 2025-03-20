@@ -3,16 +3,21 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-display-data',
+  selector: 'app-reset-form',
   imports: [FormsModule, CommonModule],
-  templateUrl: './display-data.component.html',
-  styleUrl: './display-data.component.css'
+  templateUrl: './reset-form.component.html',
+  styleUrl: './reset-form.component.css'
 })
-export class DisplayDataComponent {
+export class ResetFormComponent {
   userData: {name: string, email: string} | null = null;
 
   onSubmit(form: any){
     this.userData = form.value;
+    form.reset();
+  }
+
+  onReset(form: any){
+    this.userData = null;
     form.reset();
   }
 }

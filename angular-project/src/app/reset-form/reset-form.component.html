@@ -1,0 +1,17 @@
+<p>reset-form works!</p>
+<form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+  <label for="name">name:</label>
+  <input type="text" id="name" name="name" ngModel required>
+
+  <label for="email">email:</label>
+  <input type="email" id="email" name="email" ngModel required>
+
+  <button type="submit" [disabled]="!userForm.valid">submit</button>
+  <button type="button" (click)="onReset(userForm)">reset</button>
+</form>
+
+<div *ngIf="userData">
+  <h3>user info</h3>
+  <p>name: {{userData.name}}</p>
+  <p>email: {{userData.email}}</p>
+</div>
