@@ -3,7 +3,7 @@
 <p>Your name is: {{ nameSignal() }}</p>
  -->
 
- <input [value]="nameSignal()" (input)="nameSignal.set($event.target.value)" />
+ <!-- <input [value]="nameSignal()" (input)="nameSignal.set($event.target.value)" /> -->
  <p>Your name is: {{ nameSignal() }}</p>
 
  <button (click)="resetName()">Reset</button>
