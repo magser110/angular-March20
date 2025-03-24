@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent implements OnInit {
-  products: string[];
+  products: string[] = [];
 
   constructor(private productServiceService: ProductServiceService) {}
 

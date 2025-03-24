@@ -10,8 +10,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './task.component.css'
 })
 export class TaskComponent {
-  taskName: string;
-  tasks: string[];
+  taskName: string = '';
+  tasks: string[] = [];
 
   constructor(private taskService: TaskService) {}
 
